@@ -61,14 +61,8 @@ section .selected {
     position: relative;
 }
 
-.mobile .link i {
-    height: fit-content;
-    width: fit-content;
-}
-
 .mobile .link p {
     font-size: 0.5rem;
-    
 }
 
 .mobile .selected i {

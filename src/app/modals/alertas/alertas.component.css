@@ -13,7 +13,7 @@ i {
 }
 
 .progresso {
-    align-self: self-start;
+    align-self: flex-start;
     background-color: var(--white);
     height: 4px;
     width: 0;

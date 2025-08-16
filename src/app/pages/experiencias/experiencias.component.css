@@ -52,8 +52,6 @@
     border: 2px solid var(--white);
     border-radius: 1rem;
     padding: 1rem;
-    width: fit-content;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
