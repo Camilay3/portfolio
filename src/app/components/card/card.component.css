@@ -15,7 +15,7 @@ section {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
@@ -157,5 +157,23 @@ img {
     img {
         height: 100%;
         width: 35%;
+    }
+}
+
+/* ALTURA */
+@media screen and (max-height: 580px) and (max-width: 770px) {
+    h1 {
+        font-size: 0.6rem;
+    }
+
+    .contatos i {
+        font-size: 0.8rem;
+    }
+
+    .contatos a {
+        padding: 0.2rem;
+        margin-top: 0.1rem;
+        font-size: 0.4rem;
+        max-width: 80%;
     }
 }
