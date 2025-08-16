@@ -122,12 +122,12 @@ img {
 
     section {
         gap: 1rem;
-        padding-inline: 5rem;
+        padding-inline-end: 8rem;
     }
 
     img {
         height: 100%;
-        width: 30%;
+        width: 25%;
     }
 
     h1 {
@@ -153,5 +153,10 @@ img {
 @media screen and (max-width: 500px) {
     section {
         padding-inline: 0;
+    }
+
+    img {
+        height: 100%;
+        width: 35%;
     }
 }
