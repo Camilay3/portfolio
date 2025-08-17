@@ -3,11 +3,9 @@
     @for (exp of experiencias; track exp) {
         <div class="experiencia">
             <h1>{{exp.cargo}} <span>- {{exp.data}}</span></h1>
-            @if (exp.voluntario) {
-                <span class="empresa"><i class="far fa-handshake"></i>{{exp.empresa}}</span>
-            } @else {
-                <span class="empresa"><i class="fi fi-rs-building"></i>{{exp.empresa}}</span>
-            }
+
+            <span class="empresa"><i class="{{ (exp.voluntario) ? 'far fa-handshake' : 'fi fi-rs-building' }}"></i>{{exp.empresa}}</span>
+
             <div class="line"></div>
             <p>{{exp.descricao}}</p>
         </div>

@@ -8,11 +8,8 @@
             <img draggable="false" src="{{formacao.src}}">
             <div class="descricao">
                 <p>{{formacao.nome}}</p>
-                @if (formacao.status) {
-                    <span>({{formacao.status}})</span>
-                } @else {
-                    <span>({{formacao.dataInical}} a {{formacao.dataFinal}})</span>
-                }
+
+                <span>({{ (formacao.status) ? (formacao.status) : `${formacao.dataInical} a ${formacao.dataFinal}` }})</span>
             </div>
         </div>
     }
