@@ -48,6 +48,12 @@ export class ExperienciasComponent {
   experiencias: Experiencia[] = [
     {
       cargo: "UX Designer",
+      empresa: "Laboratório de Telemática, Acessibilidade e Projetos Educacionais (LTAP)",
+      data: "09/25 até o momento",
+      descricao: "Criação de fluxos, identidade visual e padrões, desenvolvimento de protótipos; colaboração com desenvolvedores, análise de usabilidade e acessibilidade.",
+    },
+    {
+      cargo: "UX Designer",
       empresa: "Núcleo de Desenvolvimento de Software",
       data: "06/25 até o momento",
       descricao: "Pesquisa com usuários; criação de fluxos, desenvolvimento de protótipos; colaboração com desenvolvedores e análise de usabilidade para melhoria contínua da interface.",

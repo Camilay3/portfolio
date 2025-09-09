@@ -36,7 +36,7 @@ $ git clone https://github.com/Camilay3/portifolio
 # Navegue até a pasta
 > cd portifolio
 
-# Pré-requisitos: Node.js instalado
+# Pré-requisitos: Node.js e Angular CLI
 > npm install
 > ng serve
 ```
