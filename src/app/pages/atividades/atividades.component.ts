@@ -22,6 +22,14 @@ export class AtividadesComponent {
 
   eventos: Evento[] = [
     {
+      nome: "Frontend day",
+      descricao: "Organizado pela comunidade FrontendCE, o Frontend Day Fortaleza reuniu desenvolvedores, designers e entusiastas da tecnologia em um dia inteiro de palestras, mentorias e networking, com foco em boas práticas, acessibilidade e tendências do ecossistema frontend.",
+      data: "Setembro de 2025",
+      modalidade: "Presencial",
+      src: "FrontendDay.jpeg",
+      url: "https://www.linkedin.com/posts/camila-santiago-7a9b9b354_frontendday-fortaleza-comunidadedev-activity-7375699935595380736-ixQO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFhz67EBx_AhbSsZa8Mi8zsmWh7tsg3uPJA"
+    },
+    {
       nome: "Build With AI",
       descricao: "Promovido pelo Google Developers Group de Fortaleza, o evento trouxe uma programação com foco em aplicações práticas da IA em diferentes setores.",
       data: "Julho de 2025",
@@ -43,11 +51,11 @@ export class AtividadesComponent {
       this.animando = false;
     }, 400);
   }
-  
+
   paginaAnterior() {
     if (this.indexPagina > 0) this.trocarPagina(-1);
   }
-  
+
   proximaPagina() {
     if (this.indexPagina < this.totalPaginas - 1) this.trocarPagina(1);
   }
