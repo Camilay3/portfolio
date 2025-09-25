@@ -47,6 +47,13 @@ function parseDataConclusao(data: string): Date {
 export class ExperienciasComponent {
   experiencias: Experiencia[] = [
     {
+      cargo: "Desenvolvedora FrontEnd",
+      empresa: "Laboratório de Visão Computacional e Inteligência Artificial (VICIA)",
+      data: "08/25 até o momento",
+      descricao: "Desenvolvimento de projeto em parceria com o MEC, incluindo a criação de telas, ajustes de componentes e integração com a camada de backend para garantir o funcionamento completo da aplicação.",
+      voluntario: true
+    },
+    {
       cargo: "UX Designer",
       empresa: "Laboratório de Telemática, Acessibilidade e Projetos Educacionais (LTAP)",
       data: "09/25 até o momento",
@@ -55,7 +62,7 @@ export class ExperienciasComponent {
     {
       cargo: "UX Designer",
       empresa: "Núcleo de Desenvolvimento de Software",
-      data: "06/25 até o momento",
+      data: "06/25 a 09/25",
       descricao: "Pesquisa com usuários; criação de fluxos, desenvolvimento de protótipos; colaboração com desenvolvedores e análise de usabilidade para melhoria contínua da interface.",
       voluntario: true
     },
