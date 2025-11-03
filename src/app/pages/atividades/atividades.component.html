@@ -8,11 +8,11 @@
                     <img draggable="false" src="{{evento.src}}">
                 }
                 <div class="desc">
-                    @if (evento.url) {
-                        <h3>{{evento.nome}}<a href="{{evento.url}}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" title="Ir ao post no Linkedin"></i></a></h3>
-                    } @else {
-                        <h3>{{evento.nome}}</h3>
-                    }
+                    <h3>{{evento.nome}}
+                      @if (evento.url) {
+                        <a href="{{evento.url}}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" title="Ir ao post no Linkedin"></i></a>
+                      }
+                    </h3>
                     
                     @if (evento.data && evento.modalidade) {
                         <span>{{evento.data}} - {{evento.modalidade}}</span>

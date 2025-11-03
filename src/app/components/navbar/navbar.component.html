@@ -1,33 +1,13 @@
-@if (desktop) {
-    <section>
-        <p [class.selected]="rotaAtual === '/'" routerLink="" data-text="Início">Início</p>
-        <p [class.selected]="rotaAtual === '/sobre'" routerLink="sobre" data-text="Sobre mim">Sobre mim</p>
-        <p [class.selected]="rotaAtual === '/projetos'" routerLink="projetos" data-text="Projetos">Projetos</p>
-        <p [class.selected]="rotaAtual === '/atividades'" routerLink="atividades" data-text="Atividades">Atividades</p>
-        <p [class.selected]="rotaAtual === '/experiencias'" routerLink="experiencias" data-text="Experiências">Experiências</p>
-    </section>
+<section [class]="desktop ? 'desktop' : 'mobile'">
+  @for (rota of rotas; track rota) {
+    @if (desktop) {
+      <p [class.selected]="rotaAtual === `/${rota.path}`" [routerLink]="rota.path" [attr.data-text]="rota.title"> {{ rota.title }} </p>
 
-} @else {
-    <div class="mobile">
-        <div [class.selected]="rotaAtual === '/'" routerLink="" class="link">
-            <i class="fi fi-rr-home"></i>
-            <p data-text="Início">Início</p>
-        </div>
-        <div [class.selected]="rotaAtual === '/sobre'" routerLink="sobre" class="link">
-            <i class="fi fi-rr-info"></i>
-            <p data-text="Sobre mim">Sobre mim</p>
-        </div>
-        <div [class.selected]="rotaAtual === '/projetos'" routerLink="projetos" class="link">
-            <i class="fi fi-rr-edit-alt"></i>
-            <p data-text="Projetos">Projetos</p>
-        </div>
-        <div [class.selected]="rotaAtual === '/atividades'" routerLink="atividades" class="link">
-            <i class="fi fi-rr-calendar-star"></i>
-            <p data-text="Atividades">Atividades</p>
-        </div>
-        <div [class.selected]="rotaAtual === '/experiencias'" routerLink="experiencias" class="link">
-            <i class="fi fi-rr-briefcase"></i>
-            <p data-text="Experiências">Experiências</p>
-        </div>
-    </div>
-}
+    } @else {
+      <div [class.selected]="rotaAtual === `/${rota.path}`" [routerLink]="rota.path" class="link">
+        <i [class]="`fi fi-rr-${rota.icon}`"></i>
+        <p [attr.data-text]="rota.title">{{ rota.title }}</p>
+      </div>
+    }
+  }
+</section>

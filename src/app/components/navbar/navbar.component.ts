@@ -16,9 +16,7 @@ export class NavbarComponent {
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        this.rotaAtual = event.urlAfterRedirects;
-      }
+      if (event instanceof NavigationEnd) this.rotaAtual = event.urlAfterRedirects;
     });
 
     // Monitora se é desktop
@@ -26,4 +24,12 @@ export class NavbarComponent {
       this.desktop = isDesktop;
     });
   }
+
+  rotas = [
+    { title: 'Início', path: '', icon: 'home' },
+    { title: 'Sobre mim', path: 'sobre', icon: 'info' },
+    { title: 'Projetos', path: 'projetos', icon: 'edit-alt' },
+    { title: 'Atividades', path: 'atividades', icon: 'calendar-star' },
+    { title: 'Experiencias', path: 'experiencias', icon: 'briefcase' },
+  ];
 }

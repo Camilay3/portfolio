@@ -1,11 +1,11 @@
 /* DESKTOP */
-section {
+section.desktop {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-section p {
+section.desktop p {
     margin-top: 2px;
     padding: 0.4rem 0.8rem;
     border-radius: 0.3rem;
@@ -16,14 +16,14 @@ section p {
     border-bottom: 1px solid var(--lightPurple);
 }
 
-section p:hover {
+section.desktop p:hover {
     font-weight: 600;
     border: 1px solid var(--lightPurple);
     box-shadow: 0 0 4px 0 var(--white);
 }
 
 /* Evitar letras balançando ao usar o hover */
-section p::after {
+section.desktop p::after {
     content: attr(data-text);
     font-weight: 700;
     visibility: hidden;
@@ -32,20 +32,20 @@ section p::after {
     display: block;
 }
 
-section .selected {
+section.desktop .selected {
     border: 1px solid var(--white) !important;
     box-shadow: none !important;
     font-weight: bold !important;
 }
 
 @media screen and (max-width: 1080px) {
-    section p {
+    section.desktop p {
         font-size: 1rem;
     }
 }
 
 /* MOBILE */
-.mobile {
+section.mobile {
     display: flex;
     align-items: end;
     justify-content: space-around;
@@ -54,18 +54,18 @@ section .selected {
     padding: 0.5rem;
 }
 
-.mobile .link {
+section.mobile .link {
     display: flex;
     align-items: center;
     flex-direction: column;
     position: relative;
 }
 
-.mobile .link p {
+section.mobile .link p {
     font-size: 0.5rem;
 }
 
-.mobile .selected i {
+section.mobile .selected i {
     border-radius: 50%;
     position: absolute;
     padding: 0.35rem 0.45rem;
@@ -86,6 +86,6 @@ section .selected {
     }
 }
 
-.mobile .selected p {
+section.mobile .selected p {
     font-weight: bold;
 }

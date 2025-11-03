@@ -10,8 +10,9 @@ import { Icone } from '../../components/icones/icone';
 })
 export class InicioComponent {
   iconesPrincipal: Icone[] = [
-    { src: 'fab fa-node-js', label: 'Nodejs' },
+    { src: 'fab fa-angular', label: 'Angular' },
     { src: 'fi fi-brands-typescript', label: 'Typescript' },
+    { src: 'fab fa-node-js', label: 'Nodejs' },
     { src: 'fab fa-js-square', label: 'Javascript' },
     { src: 'fab fa-git-alt', label: 'Git' },
     { src: 'fab fa-css3-alt', label: 'CSS' },
@@ -19,12 +20,11 @@ export class InicioComponent {
   ];
 
   iconesOutros: Icone[] = [
-    { src: 'fab fa-angular', label: 'Angular' },
     { src: 'fab fa-python', label: 'Python' },
-    { src: 'fab fa-swift', label: 'Swift' },
-    { src: 'fas fa-database', label: 'MySQL' },
     { src: 'fas fa-database', label: 'PostgreSQL' },
+    { src: 'fas fa-database', label: 'MySQL' },
     { src: 'fi fi-sr-square-c', label: 'C' },
+    { src: 'fab fa-swift', label: 'Swift' },
     { src: 'fab fa-php', label: 'php' },
   ];
 
