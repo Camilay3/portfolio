@@ -76,6 +76,16 @@ export class ExperienciasComponent {
 
   cursos: Curso[] = [
     {
+      nome: "Formação Java",
+      orgao: "Alura",
+      dataDeConclusao: "Dez/2025"
+    },
+    {
+      nome: "Formação Angular",
+      orgao: "Alura",
+      dataDeConclusao: "Jul/2025"
+    },
+    {
       nome: "Imersão Flutter",
       orgao: "Alura",
       dataDeConclusao: "Abr/2025"
@@ -84,11 +94,6 @@ export class ExperienciasComponent {
       nome: "Formação Typescript",
       orgao: "Alura",
       dataDeConclusao: "Mai/2025"
-    },
-    {
-      nome: "Formação Angular",
-      orgao: "Alura",
-      dataDeConclusao: "Jul/2025"
     },
     {
       nome: "Turma Foundation",
