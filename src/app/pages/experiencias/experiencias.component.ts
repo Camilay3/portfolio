@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 interface Experiencia {
   cargo: string
@@ -32,9 +32,8 @@ const meses: { [key: string]: number } = {
 function parseDataConclusao(data: string): Date {
   const [mesStr, anoStr] = data.split("/");
   const mes = meses[mesStr];
-  const ano = parseInt(anoStr, 10);
+  const ano = Number.parseInt(anoStr, 10);
 
-  // se não achar o mês, joga 0 (janeiro) pra não quebrar
   return new Date(ano, mes ?? 0, 1);
 }
 
@@ -44,7 +43,7 @@ function parseDataConclusao(data: string): Date {
   templateUrl: './experiencias.component.html',
   styleUrl: './experiencias.component.css'
 })
-export class ExperienciasComponent {
+export class ExperienciasComponent implements OnInit {
   experiencias: Experiencia[] = [
     {
       cargo: "Desenvolvedora FrontEnd",
