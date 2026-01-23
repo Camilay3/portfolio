@@ -126,6 +126,10 @@ h3 {
         max-width: 100%;
     }
 
+    .evento {
+      margin-top: 1.5rem;
+    }
+
     .evento img {
         width: 15%;
     }
@@ -140,6 +144,10 @@ h3 {
 }
 
 @media screen and (max-width: 500px) {
+    .evento {
+      margin-top: 1rem;
+    }
+
     .evento img {
         width: 25%;
     }
