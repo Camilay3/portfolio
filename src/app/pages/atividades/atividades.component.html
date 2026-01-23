@@ -5,7 +5,7 @@
         @for (evento of eventosPaginados; track evento) {
             <div class="evento fade" [class.fade-enter]="animando">
                 @if (evento.src) {
-                    <img draggable="false" src="{{evento.src}}">
+                    <img draggable="false" src="eventos/{{evento.src}}" alt="Evento">
                 }
                 <div class="desc">
                     <h3>{{evento.nome}}
@@ -13,10 +13,7 @@
                         <a href="{{evento.url}}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" title="Ir ao post no Linkedin"></i></a>
                       }
                     </h3>
-                    
-                    @if (evento.data && evento.modalidade) {
-                        <span>{{evento.data}} - {{evento.modalidade}}</span>
-                    }
+                    <span>{{evento?.data}} - {{evento.modalidade}}</span>
                     <p>{{evento.descricao}}</p>
                 </div>
             </div>

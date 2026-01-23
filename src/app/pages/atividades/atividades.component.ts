@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { meses } from '../experiencias/experiencias.component';
 
 interface Evento {
   nome: string
   descricao: string
-  data?: string
-  modalidade?: string
+  data: string
+  modalidade: 'Presencial' | 'Online',
   src?: string
   url?: string
 }
@@ -15,9 +16,9 @@ interface Evento {
   templateUrl: './atividades.component.html',
   styleUrl: './atividades.component.css'
 })
-export class AtividadesComponent {
+export class AtividadesComponent implements OnInit {
   indexPagina: number = 0;
-  eventosPorPagina: number = 2;
+  eventosPorPagina: number = 3;
   animando: boolean = false;
 
   eventos: Evento[] = [
@@ -37,7 +38,30 @@ export class AtividadesComponent {
       src: "BuildWithAI.jpg",
       url: "https://www.linkedin.com/posts/camila-santiago-7a9b9b354_buildwithai-googledevelopersgroup-inteligaeanciaartificial-activity-7355002084091432962-vOXj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFhz67EBx_AhbSsZa8Mi8zsmWh7tsg3uPJA"
     },
+    {
+      nome: "Bate-papo sobre IA",
+      descricao: "Realizado pela comunidade Javascript Ceará, o bate-papo trouxe uma conversa leve com foco no uso da inteligência artificial na rotina dos desenvolvedores.",
+      data: "Janeiro de 2026",
+      modalidade: "Online",
+      src: 'BatePapoIa.png',
+    },
   ];
+
+  ngOnInit() {
+    this.eventos.sort((a, b) => {
+      const dataA = this.parseDataRealizada(a.data);
+      const dataB = this.parseDataRealizada(b.data);
+      return dataB.getTime() - dataA.getTime();
+    });
+  }
+
+  parseDataRealizada(data: string): Date {
+    const partes = data.split(" ").filter(p => p.toLowerCase() !== "de");
+    const mes = meses[partes[0].slice(0, 3)];
+    const ano = Number.parseInt(partes[1], 10);
+
+    return new Date(ano, mes ?? 0, 1);
+  }
 
   get eventosPaginados(): Evento[] {
     const inicio = this.indexPagina * this.eventosPorPagina;

@@ -14,7 +14,7 @@ interface Curso {
   dataDeConclusao: string
 }
 
-const meses: { [key: string]: number } = {
+export const meses: { [key: string]: number } = {
   "Jan": 0,
   "Fev": 1,
   "Mar": 2,
