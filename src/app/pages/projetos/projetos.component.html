@@ -15,14 +15,14 @@
         <div class="descricao">
             <p>{{projetoAtual.descricao}}</p>
             @if (projetoAtual.src) {
-                <div (click)="expandir(true)" [class.popup]="imagemExpandida" class="foto">
-                    <img draggable="false" src="{{projetoAtual.src}}" alt="Imagem do(a) {{projetoAtual.nome}}">
+                <div (click)="imagemExpandida = true" [class.popup]="imagemExpandida" class="foto">
+                    <img draggable="false" src="projetos/{{projetoAtual.src}}" alt="Imagem do(a) {{projetoAtual.nome}}">
                     @if (!imagemExpandida) {
                         <i class="eye far fa-eye" title="Ver imagem"></i>
                     }
                 </div>
                 @if (imagemExpandida) {
-                    <i (click)="expandir(false)" class="close fi fi-rr-circle-xmark"></i>
+                    <i (click)="imagemExpandida = false" class="close fi fi-rr-circle-xmark"></i>
                 }
             }
         </div>

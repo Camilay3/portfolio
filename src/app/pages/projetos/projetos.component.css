@@ -100,7 +100,7 @@
     height: auto;
     object-fit: contain;
     border-radius: 0;
-    animation: opacidade .3s linear;
+    animation: opacidade .2s linear;
 }
 
 @keyframes opacidade {
