@@ -38,6 +38,14 @@ export class ProjetosComponent implements OnInit {
       src: "CalculadoraNotas.png"
     },
     {
+      nome: "Desafio Smartfit",
+      descricao: "Recriação de um desafio técnico da Smartfit como projeto pessoal para estudo e prática de FrontEnd, com foco em componentização, estruturação e fidelidade ao layout proposto.",
+      tecnologias: ["Angular", "Typescript", "Tailwind", "SCSS"],
+      repositorio: "https://github.com/Camilay3/front-end-code-challenge-smartsite",
+      url: "https://camilay3.github.io/front-end-code-challenge-smartsite/",
+      src: "DesafioSmartfit.png"
+    },
+    {
       nome: "Devoday",
       descricao: "Devocional day é um projeto estudantil que surgiu a partir da dificuldade de novos cristãos em fazer devocional e/ou lectio divina. O projeto também é pensado em cristãos que sabem fazer mas possuem dificuldades em manter constância nos estudos bíblicos.",
       tecnologias: ["Node.js", "Javascript", "Handlebars", "CSS", "HTML", "PostgreSQL", "Nodemailer", "Prisma", "Express", "Bcrypt", "JWT"],
