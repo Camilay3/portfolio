@@ -10,15 +10,12 @@ import { AlertasComponent } from '../alertas/alertas.component';
   styleUrl: './dialogo.component.css'
 })
 export class DialogoComponent {
-  constructor(
-    private dialogRef: MatDialogRef<DialogoComponent>
-  ) { }
+  constructor( private readonly dialogRef: MatDialogRef<DialogoComponent> ) {}
+  readonly #dialog = inject(MatDialog);
 
   public closeModal() {
     return this.dialogRef.close();
   }
-
-  #dialog = inject(MatDialog);
 
   public sendEmail(e: Event) {
     e.preventDefault();
@@ -27,30 +24,21 @@ export class DialogoComponent {
       .sendForm('service_z05btzr', 'template_q2wk59t', e.target as HTMLFormElement, {
         publicKey: 'dEr2-__vF6-Ouqsfi',
       })
-      .then(
-        (result) => {
-          console.log('SUCCESS!', result.status, result.text);
-
+      .then(() => {
           const alertRef = this.#dialog.open(AlertasComponent, {
             disableClose: true,
-            data: {
-              tipo: 'sucesso',
-              mensagem: 'Email enviado com sucesso!'
-            }
+            data: { tipo: 'sucesso', mensagem: 'Email enviado com sucesso!' }
           });
 
           this.closeModal();
           setTimeout(() => alertRef.close(), 3000);
         },
         (error) => {
-          console.log('FAILED...', (error as EmailJSResponseStatus).text);
+          console.error('FAILED...', (error as EmailJSResponseStatus).text);
 
           const alertRef = this.#dialog.open(AlertasComponent, {
             disableClose: true,
-            data: {
-              tipo: 'erro',
-              mensagem: 'Falha ao enviar email'
-            }
+            data: { tipo: 'erro', mensagem: 'Falha ao enviar email' }
           });
 
           this.closeModal();

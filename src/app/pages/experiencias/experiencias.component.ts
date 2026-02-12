@@ -50,7 +50,6 @@ export class ExperienciasComponent implements OnInit {
       empresa: "Laboratório de Visão Computacional e Inteligência Artificial (VICIA)",
       data: "08/25 até o momento",
       descricao: "Desenvolvimento de projeto em parceria com o MEC, incluindo a criação de telas, ajustes de componentes e integração com a camada de backend para garantir o funcionamento completo da aplicação.",
-      voluntario: true
     },
     {
       cargo: "UX Designer",
@@ -74,86 +73,22 @@ export class ExperienciasComponent implements OnInit {
   ];
 
   cursos: Curso[] = [
-    {
-      nome: "Formação Java",
-      orgao: "Alura",
-      dataDeConclusao: "Dez/2025"
-    },
-    {
-      nome: "Formação Angular",
-      orgao: "Alura",
-      dataDeConclusao: "Jul/2025"
-    },
-    {
-      nome: "Imersão Flutter",
-      orgao: "Alura",
-      dataDeConclusao: "Abr/2025"
-    },
-    {
-      nome: "Formação Typescript",
-      orgao: "Alura",
-      dataDeConclusao: "Mai/2025"
-    },
-    {
-      nome: "Turma Foundation",
-      orgao: "Apple Developer Academy",
-      dataDeConclusao: "Dez/2022"
-    },
-    {
-      nome: "Desenvolvimento iOS",
-      orgao: "Capacita Brasil",
-      dataDeConclusao: "Jun/2025"
-    },
-    {
-      nome: "Jornada Digital",
-      orgao: "Senac",
-      dataDeConclusao: "Jul/2024"
-    },
-    {
-      nome: "Serviços Administrativos",
-      orgao: "Senac",
-      dataDeConclusao: "Mai/2025"
-    },
-    {
-      nome: "Introdução ao Javascript",
-      orgao: "Fundação Bradesco",
-      dataDeConclusao: "Dez/2021"
-    },
-    {
-      nome: "Inovando com CSS",
-      orgao: "Fundação Bradesco",
-      dataDeConclusao: "Dez/2021"
-    },
-    {
-      nome: "HTML e CSS na prática",
-      orgao: "Fundação Bradesco",
-      dataDeConclusao: "Dez/2021"
-    },
-    {
-      nome: "HTML Avançado",
-      orgao: "Fundação Bradesco",
-      dataDeConclusao: "Dez/2021"
-    },
-    {
-      nome: "Criando um site simples com HTML, CSS e Javascript",
-      orgao: "Fundação Bradesco",
-      dataDeConclusao: "Dez/2021"
-    },
-    {
-      nome: "Fundamentos de TI: Hardware e Software",
-      orgao: "Fundação Bradesco",
-      dataDeConclusao: "Dez/2021"
-    },
-    {
-      nome: "Sistemas Operacionais: Conceitos básicos",
-      orgao: "Fundação Bradesco",
-      dataDeConclusao: "Ago/2021"
-    },
-    {
-      nome: "Fundamentos do Design Gráfico",
-      orgao: "Fundação Bradesco",
-      dataDeConclusao: "Ago/2021"
-    },
+    { nome: "Formação Java", orgao: "Alura", dataDeConclusao: "Dez/2025" },
+    { nome: "Formação Angular", orgao: "Alura", dataDeConclusao: "Jul/2025" },
+    { nome: "Imersão Flutter", orgao: "Alura", dataDeConclusao: "Abr/2025" },
+    { nome: "Formação Typescript", orgao: "Alura", dataDeConclusao: "Mai/2025" },
+    { nome: "Turma Foundation", orgao: "Apple Developer Academy", dataDeConclusao: "Dez/2022" },
+    { nome: "Desenvolvimento iOS", orgao: "Capacita Brasil", dataDeConclusao: "Jun/2025" },
+    { nome: "Jornada Digital", orgao: "Senac", dataDeConclusao: "Jul/2024" },
+    { nome: "Serviços Administrativos", orgao: "Senac", dataDeConclusao: "Mai/2025" },
+    { nome: "Introdução ao Javascript", orgao: "Fundação Bradesco", dataDeConclusao: "Dez/2021" },
+    { nome: "Inovando com CSS", orgao: "Fundação Bradesco", dataDeConclusao: "Dez/2021" },
+    { nome: "HTML e CSS na prática", orgao: "Fundação Bradesco", dataDeConclusao: "Dez/2021" },
+    { nome: "HTML Avançado", orgao: "Fundação Bradesco", dataDeConclusao: "Dez/2021" },
+    { nome: "Criando um site simples com HTML, CSS e Javascript", orgao: "Fundação Bradesco", dataDeConclusao: "Dez/2021" },
+    { nome: "Fundamentos de TI: Hardware e Software", orgao: "Fundação Bradesco", dataDeConclusao: "Dez/2021" },
+    { nome: "Sistemas Operacionais: Conceitos básicos", orgao: "Fundação Bradesco", dataDeConclusao: "Ago/2021" },
+    { nome: "Fundamentos do Design Gráfico", orgao: "Fundação Bradesco", dataDeConclusao: "Ago/2021" },
   ];
 
   ngOnInit() {

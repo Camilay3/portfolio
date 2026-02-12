@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { TelaService } from '../../services/tela.service';
 
@@ -8,11 +8,14 @@ import { TelaService } from '../../services/tela.service';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   rotaAtual: string = '';
   desktop?: boolean;
 
-  constructor(private router: Router, private telaService: TelaService) { }
+  constructor(
+    private readonly router: Router,
+    private readonly telaService: TelaService
+  ) { }
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {
@@ -20,9 +23,7 @@ export class NavbarComponent {
     });
 
     // Monitora se é desktop
-    this.telaService.desktop$.subscribe(isDesktop => {
-      this.desktop = isDesktop;
-    });
+    this.telaService.desktop$.subscribe(isDesktop => this.desktop = isDesktop);
   }
 
   rotas = [

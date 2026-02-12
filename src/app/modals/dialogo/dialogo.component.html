@@ -2,22 +2,22 @@
 
 <form class="contact-form" (submit)="sendEmail($event)">
     <div class="inputGroup">
-        <label>Nome</label>
+        <label for="nome">Nome</label>
         <input placeholder="Digite seu nome" type="text" id="nome" name="nome" required>
     </div>
 
     <div class="inputGroup">
-        <label>Email</label>
+        <label for="email">Email</label>
         <input placeholder="Digite seu email" type="email" name="email" id="email" required>
     </div>
 
     <div class="inputGroup">
-        <label>Assunto</label>
+        <label for="assunto">Assunto</label>
         <input maxlength="50" placeholder="Digite o assunto da mensagem" type="text" name="assunto" id="assunto" required>
     </div>
 
     <div class="inputGroup">
-        <label>Mensagem</label>
+        <label for="mensagem">Mensagem</label>
         <textarea rows="5" placeholder="Digite a mensagem" name="mensagem" id="mensagem" required></textarea>
     </div>
 

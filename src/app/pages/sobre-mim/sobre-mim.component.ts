@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Icone } from '../../components/icones/icone';
 import { IconesComponent } from '../../components/icones/icones.component';
 
@@ -16,7 +16,7 @@ interface Formacao {
   templateUrl: './sobre-mim.component.html',
   styleUrl: './sobre-mim.component.css'
 })
-export class SobreMimComponent {
+export class SobreMimComponent implements OnInit {
   idade?: string;
   dataNasc: Date = new Date(2006, 4, 2);
   dataAtual = new Date();
