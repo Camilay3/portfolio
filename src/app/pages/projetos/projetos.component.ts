@@ -32,7 +32,7 @@ export class ProjetosComponent implements OnInit {
     {
       nome: "Calculadora de notas",
       descricao: "Pensado nos alunos que utilizam o sistema de notas do IFCE, a calculadora foi criada para facilitar as simulações sobre a vida acadêmica.",
-      tecnologias: ["Angular", "Typescript", "TaigaUI", "Tailwind"],
+      tecnologias: ["Angular", "TaigaUI", "Tailwind", "Jest", "Typescript", ],
       repositorio: "https://github.com/Camilay3/calculadoraDeNotas",
       url: "https://camilay3.github.io/calculadoraDeNotas/",
       src: "CalculadoraNotas.png"

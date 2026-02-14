@@ -46,7 +46,7 @@ function parseDataConclusao(data: string): Date {
 export class ExperienciasComponent implements OnInit {
   experiencias: Experiencia[] = [
     {
-      cargo: "Desenvolvedora FrontEnd",
+      cargo: "Desenvolvedora FrontEnd Júnior",
       empresa: "Laboratório de Visão Computacional e Inteligência Artificial (VICIA)",
       data: "08/25 até o momento",
       descricao: "Desenvolvimento de projeto em parceria com o MEC, incluindo a criação de telas, ajustes de componentes e integração com a camada de backend para garantir o funcionamento completo da aplicação.",
