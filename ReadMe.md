@@ -1,5 +1,5 @@
-<h1 align="center">💼 Portifólio pessoal</h1>
-Este projeto consiste no desenvolvimento do meu portifólio, onde você poderá encontrar meus principais projetos e um pouco sobre mim.
+<h1 align="center">💼 Portfólio pessoal</h1>
+Este projeto consiste no desenvolvimento do meu portfólio, onde você poderá encontrar meus principais projetos e um pouco sobre mim.
 
 <br><br>
 <div align="left">
@@ -10,7 +10,7 @@ Este projeto consiste no desenvolvimento do meu portifólio, onde você poderá 
     <p>Atividades: Eventos com breves descrições</p>
     <p>Experiências: Trajetória profissional com registro de todos os cursos já realizados</p>
     <p>404: Retorno para erro de página não encontrada</p>
-    🔗 <a href="https://www.figma.com/design/u5RJmXz6ELv16x11xzhyD7/Portifolio?node-id=0-1&t=PJqtEaB7tFgi6W78-1">Protótipo de Alta Fidelidade</a>
+    🔗 <a href="https://www.figma.com/design/u5RJmXz6ELv16x11xzhyD7/portfolio?node-id=0-1&t=PJqtEaB7tFgi6W78-1">Protótipo de Alta Fidelidade</a>
 </div>
 
 <br><br>
@@ -28,13 +28,13 @@ Este projeto consiste no desenvolvimento do meu portifólio, onde você poderá 
 1. Clone o repositório
     
 ```bash
-$ git clone https://github.com/Camilay3/portifolio
+$ git clone https://github.com/Camilay3/portfolio
 ```
 2. Instale as dependências e execute o servidor Angular
 
 ```bash
 # Navegue até a pasta
-> cd portifolio
+> cd portfolio
 
 # Pré-requisitos: Node.js e Angular CLI
 > npm install
