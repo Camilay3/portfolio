@@ -45,6 +45,13 @@ export class AtividadesComponent implements OnInit {
       modalidade: "Online",
       src: 'BatePapoIa.png',
     },
+    {
+      nome: "Aniversário do Polo de Inovação",
+      descricao: "A comemoração dos 10 anos de existência do Polo de Inovação do IFCE reuniu professores, pesquisadores e parceiros, proporcionando integração, troca de experiências e visibilidade às iniciativas de inovação e tecnologia desenvolvidas no Polo.",
+      data: "Janeiro de 2026",
+      modalidade: "Presencial",
+      src: 'poloInovacao.jpeg',
+    },
   ];
 
   ngOnInit() {
