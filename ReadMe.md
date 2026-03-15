@@ -28,7 +28,7 @@ Este projeto consiste no desenvolvimento do meu portfólio, onde você poderá e
 1. Clone o repositório
     
 ```bash
-$ git clone https://github.com/Camilay3/portfolio
+$ git clone git@github.com:Camilay3/portfolio.git
 ```
 2. Instale as dependências e execute o servidor Angular
 
