@@ -5,11 +5,19 @@
     align-items: center;
 }
 
-p.resumo {
-    text-align: justify;
-    hyphens: auto;
-    overflow-wrap: break-word;
-    text-indent: 2rem;
+.resumo {
+    width: 90%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 1rem;
+
+    p {
+      text-align: justify;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-indent: 2rem;
+  }
 }
 
 .formacoes {
