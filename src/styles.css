@@ -31,7 +31,7 @@ p, h1, h3, span {
     cursor: default;
 }
 
-p::selection, h1::selection, h3::selection, span::selection {
+p::selection, h1::selection, h3::selection, span::selection, li::selection {
     background-color: var(--lightPurple);
     color: var(--white);
 }

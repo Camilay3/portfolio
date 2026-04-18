@@ -49,3 +49,7 @@
     color: var(--lightPurple);
     font-weight: bold;
 }
+
+@media screen and (max-width: 500px) {
+  .resumo { width: 100%; }
+}
