@@ -6,13 +6,13 @@
 }
 
 .experiencias {
-    margin: 1.2rem auto 2rem auto;
+    margin: 1.2rem auto 6rem auto;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
-.experiencia h1 span {
+.experiencia h1 span, .historico li span {
     font-size: 1rem;
     color: var(--lightPurple);
     gap: 0.5rem;
@@ -33,6 +33,16 @@
     height: 2px;
     background-color: var(--white);
     margin-bottom: 0.5rem;
+}
+
+.historico {
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+
+    li {
+        margin-left: 2rem;
+        font-style: italic;
+    }
 }
 
 .cursos {
@@ -67,12 +77,13 @@
         font-size: 1.2rem;
     }
 
-    .experiencia {
+    .experiencia, .experiencia h1 span, .historico li span {
         font-size: 0.8rem;
     }
 
-    .experiencia h1 span {
-        font-size: 0.8rem;
+    .historico {
+        padding-left: 1.2rem;
+        li { margin-left: 1.5rem; }
     }
 
     .curso {
