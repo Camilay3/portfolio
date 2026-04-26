@@ -1,4 +1,4 @@
-<h1>Voluntariados e profissionais</h1>
+<h1>Atuações</h1>
 <div class="experiencias">
     @for (exp of experiencias; track exp) {
         <div class="experiencia">
@@ -10,15 +10,23 @@
             <p>{{exp.descricao}}</p>
 
             @if (exp.historico) {
-              <ul class="historico">
-                <h3>Histórico de projetos</h3>
-                @for (cargo of exp.historico; track $index) {
-                  <li>{{ cargo.nome }} <span>- {{ cargo.data }}</span></li>
-                }
-              </ul>
+				<ul class="historico">
+					<h3>Histórico de projetos</h3>
+					@for (cargo of exp.historico; track $index) {
+						<li>{{ cargo.nome }} <span>- {{ cargo.data }}</span></li>
+					}
+				</ul>
             }
         </div>
     }
+
+	<div class="legend">
+		<span class="purple">Legenda:</span>
+		<div class="icons">
+			<span><i class="far fa-handshake"></i>Voluntário</span>
+			<span><i class="fi fi-rs-building"></i>Profissional</span>
+		</div>
+	</div>
 </div>
 
 <h1>Cursos</h1>

@@ -5,6 +5,26 @@
     flex-direction: column;
 }
 
+.legend {
+    display: flex;
+    gap: 1rem;
+
+	.purple {
+		color: var(--lightPurple);
+		font-weight: bold;
+	}
+
+	.icons {
+		display: flex;
+		gap: 1rem;
+
+		span {
+			display: flex;
+			gap: 0.5rem;
+		}
+	}
+}
+
 .experiencias {
     margin: 1.2rem auto 6rem auto;
     display: flex;
