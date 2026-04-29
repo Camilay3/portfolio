@@ -52,6 +52,14 @@ export class AtividadesComponent implements OnInit {
       modalidade: "Presencial",
       src: 'poloInovacao.jpeg',
     },
+    {
+      nome: "TechTalks 1° Edição",
+      descricao: "Organizado pela comunidade Frontend CE, o TechTalks reuniu desenvolvedores em um encontro focado em troca de experiências e aprendizado prático, com destaque para temas como microfrontends, inteligência artificial no dia a dia dev, containerização de APIs e novas abordagens no ciclo de desenvolvimento frontend.",
+      data: "Abril de 2026",
+      modalidade: "Presencial",
+      src: 'TechTalks1.jpeg',
+	  url: 'https://www.linkedin.com/posts/camila-santiago-7a9b9b354_techtalks-microfrontends-frontend-ugcPost-7454857696538898432-jPL8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFhz67EBx_AhbSsZa8Mi8zsmWh7tsg3uPJA',
+    },
   ];
 
   ngOnInit() {
