@@ -4,7 +4,6 @@
     "rootDir": "src",
     "outDir": "./out-tsc/spec",
     "module": "commonjs",
-    "types": ["jest"]
   },
   "include": [
     "src/**/*.ts"

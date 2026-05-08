@@ -1,5 +1,4 @@
-h1,
-p {
+h1, p, a {
     width: fit-content;
     margin: auto;
     text-align: center;
@@ -12,20 +11,84 @@ h1 {
     border-right: 3px solid var(--lightPurple);
 }
 
-@keyframes escrevendo {
-    0% {
-        width: 0;
-    }
+a {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
 
-    100% {
-        width: 22ch;
-    }
+	position: relative;
+	cursor: pointer;
+	text-decoration: none;
+	margin-top: 5rem;
+	padding: 0.5rem 0.8rem;
+	border: 1px solid transparent;
+	border-radius: 4px;
+
+	i {
+		animation: pulso 1s infinite;
+		color: var(--lightPurple);
+	}
+
+	&::before, &::after {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		box-sizing: border-box;
+		border: 1px solid transparent;
+		border-radius: 4px;
+	}
+
+	&::before {
+		top: 0;
+		left: 0;
+		transition: height 0.15s linear 0.30s,
+					width 0.20s linear 0.45s,
+					border-color 0s linear 0.65s;
+	}
+
+	&::after {
+		bottom: 0;
+		right: 0;
+		transition: height 0.15s linear 0s,
+					width 0.15s linear 0.15s,
+					border-color 0s linear 0.30s;
+	}
+
+	&:hover {
+		&::before {
+			width: 100%;
+			height: 100%;
+			border-top-color: var(--lightPurple);
+			border-right-color: var(--lightPurple);
+			transition: width 0.20s linear 0s, height 0.15s linear 0.20s;
+		}
+
+		&::after {
+			width: 100%;
+			height: 100%;
+			border-bottom-color: var(--lightPurple);
+			border-left-color: var(--lightPurple);
+			transition: border-color 0s linear 0.35s,
+						width 0.15s linear 0.35s,
+						height 0.15s linear 0.50s;
+		}
+	}
+}
+
+@keyframes pulso {
+	0% { transform: translateX(0)}
+	50% { transform: translateX(25%); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes escrevendo {
+    0% { width: 0; }
+    100% { width: 22ch; }
 }
 
 @keyframes cursor {
-    50% {
-        border-color: transparent;
-    }
+    50% { border-color: transparent; }
 }
 
 .techstack {
@@ -44,15 +107,7 @@ h1 {
 }
 
 @media (max-width: 440px) {
-    h1 {
-        font-size: 1.15rem;
-    }
-
-    h3 {
-        font-size: 0.9rem;
-    }
-    
-    p {
-        font-size: 0.8rem;
-    }
+    h1 { font-size: 1.15rem; }
+    h3 { font-size: 0.9rem; }
+    p { font-size: 0.8rem; }
 }
