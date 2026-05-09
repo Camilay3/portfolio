@@ -27,13 +27,13 @@ body {
     background-color: var(--darkPurple);
 }
 
-p, h1, h3, span {
-    cursor: default;
-}
+h1, h2, h3, span, li {
+	cursor: default;
 
-p::selection, h1::selection, h3::selection, span::selection, li::selection {
-    background-color: var(--lightPurple);
-    color: var(--white);
+	&::selection, p::selection, a::selection {
+		background-color: var(--lightPurple);
+		color: var(--white);
+	}
 }
 
 h3 {
@@ -41,12 +41,8 @@ h3 {
 }
 
 @media screen and (max-width: 900px) {
-    body {
-        padding: 2rem;
-    }
+    body { padding: 2rem; }
 }
 @media screen and (max-width: 800px) {
-    body {
-        padding: 1rem;
-    }
+    body { padding: 1rem; }
 }

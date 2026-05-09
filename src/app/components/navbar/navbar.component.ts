@@ -31,6 +31,6 @@ export class NavbarComponent implements OnInit {
     { title: 'Sobre mim', path: 'sobre', icon: 'info' },
     { title: 'Projetos', path: 'projetos', icon: 'edit-alt' },
     { title: 'Atividades', path: 'atividades', icon: 'calendar-star' },
-    { title: 'Experiencias', path: 'experiencias', icon: 'briefcase' },
+    { title: 'Experiências', path: 'experiencias', icon: 'briefcase' },
   ];
 }

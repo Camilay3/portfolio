@@ -1,3 +1,13 @@
+<h1>Vivência prática</h1>
+<div class="conhecimentos">
+    @for (conhecimento of conhecimentos; track conhecimento) {
+        <div class="conhecimento">
+			<span>{{conhecimento.nome}}</span>
+			<h2>{{renderTime(conhecimento.dataInicio)}}</h2>
+        </div>
+    }
+</div>
+
 <h1>Atuações</h1>
 <div class="experiencias">
     @for (exp of experiencias; track exp) {
@@ -24,7 +34,7 @@
 		<span class="purple">Legenda:</span>
 		<div class="icons">
 			<span><i class="far fa-handshake"></i>Voluntário</span>
-			<span><i class="fi fi-rs-building"></i>Profissional</span>
+			<span><i class="fi fi-rs-building"></i>Remunerado</span>
 		</div>
 	</div>
 </div>
