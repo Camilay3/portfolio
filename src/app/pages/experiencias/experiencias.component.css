@@ -6,6 +6,9 @@
 }
 
 .legend {
+	position: absolute;
+	bottom: 0;
+
     display: flex;
     gap: 1rem;
 
@@ -29,7 +32,9 @@
     margin: 1.2rem auto 6rem auto;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 6rem;
+	position: relative;
+	padding-bottom: 3rem;
 }
 
 .experiencia h1 span, .historico li span {
@@ -49,7 +54,6 @@
 }
 
 .line {
-    width: 80%;
     height: 2px;
     background-color: var(--white);
     margin-bottom: 0.5rem;
@@ -57,7 +61,7 @@
 
 .historico {
     padding-left: 3rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
 
     li {
         margin-left: 2rem;

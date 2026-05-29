@@ -35,13 +35,13 @@ export class ExperienciasComponent implements OnInit {
 			cargo: "Desenvolvedora Frontend Júnior",
 			empresa: "Laboratório de Visão Computacional e Inteligência Artificial (VICIA)",
 			data: "08/25 até o momento",
-			descricao: "Desenvolvimento de projeto em parceria com o MEC, incluindo a criação de telas, ajustes de componentes e integração com a camada de backend para garantir o funcionamento completo da aplicação.",
+			descricao: "Desenvolvimento de projeto em parceria com o Ministério da Educação (MEC), incluindo a criação de telas, ajustes de componentes e integração com a camada de backend (APIs) para garantir o funcionamento completo da aplicação.",
 		},
 		{
 			cargo: "UX Designer Pleno",
 			empresa: "Laboratório de Telemática, Acessibilidade e Projetos Educacionais (LTAP)",
 			data: "09/25 até o momento",
-			descricao: "Criação de fluxos, identidade visual e padrões, desenvolvimento de protótipos; colaboração com desenvolvedores, análise de usabilidade e acessibilidade.",
+			descricao: "Criação de fluxos, identidade visual e padrões; desenvolvimento de protótipos; colaboração com desenvolvedores; análise de requisitos, usabilidade e acessibilidade.",
 			historico: [
 				{ nome: "UX Designer", data: "09/25 até o momento" },
 				{ nome: "UX Designer Pleno", data: "04/26 até o momento" }
@@ -51,14 +51,14 @@ export class ExperienciasComponent implements OnInit {
 			cargo: "UX Designer",
 			empresa: "Núcleo de Desenvolvimento de Software",
 			data: "06/25 a 09/25",
-			descricao: "Pesquisa com usuários; criação de fluxos, desenvolvimento de protótipos; colaboração com desenvolvedores e análise de usabilidade para melhoria contínua da interface.",
+			descricao: "Análise de padrões; criação de fluxos; desenvolvimento de protótipos; colaboração com desenvolvedores e análise de usabilidade para melhoria contínua da interface.",
 			voluntario: true
 		},
 		{
-			cargo: "Jovem Aprendiz",
+			cargo: "Jovem Aprendiz Administrativo",
 			empresa: "Metas Condomínios e Serviços",
 			data: "04/24 a 04/25",
-			descricao: "Atendimento ao cliente, com foco em alterações cadastrais; gerenciamento de documentos, contratos e protocolos; e arquivamento de atas de reunião."
+			descricao: "Atendimento ao cliente, com foco em alterações cadastrais; gerenciamento de documentos, contratos e protocolos; arquivamento e controle de atas de reunião."
 		},
 	];
 
