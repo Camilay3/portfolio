@@ -43,7 +43,7 @@ export class ExperienciasComponent implements OnInit {
 			data: "09/25 até o momento",
 			descricao: "Criação de fluxos, identidade visual e padrões; desenvolvimento de protótipos; colaboração com desenvolvedores; análise de requisitos, usabilidade e acessibilidade.",
 			historico: [
-				{ nome: "UX Designer", data: "09/25 até o momento" },
+				{ nome: "UX Designer", data: "09/25 a 07/26" },
 				{ nome: "UX Designer Pleno", data: "04/26 até o momento" }
 			]
 		},
