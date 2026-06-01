@@ -1,21 +1,19 @@
-export interface Experiencia {
-	cargo: string
+export interface Experiencia extends Funcao {
 	empresa: string
-	data: string
 	descricao: string
 	voluntario?: boolean
-	historico?: Cargo[]
+	historico?: Funcao[]
 }
 
-interface Cargo {
-	nome: string
+interface Funcao {
+	cargo: string
 	data: string
 }
 
 export interface Conhecimento {
 	nome: string
 	dataInicio: Date
-	dataFim?: Date
+	// dataFim?: Date
 }
 
 export interface Curso {
