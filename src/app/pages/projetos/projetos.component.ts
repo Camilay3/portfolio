@@ -29,6 +29,13 @@ export class ProjetosComponent implements OnInit {
       url: "https://theotokos.onrender.com",
       src: "Theotokos.png"
     },
+	{
+      nome: "RatingUp",
+      descricao: "Plataforma web criada com o propósito de reduzir a lacuna no aprendizado de xadrez na população brasileira, tornando o ensino do jogo mais acessível, moderno e envolvente. O ensino é estruturado em níveis organizados como páginas de um livro digital, onde o usuário avança fase por fase, desbloqueando novos conteúdos conforme evolui.",
+      tecnologias: ["Angular", "Typescript", "Java", "Spring", "MinIO", "Docker", "PostgreSQL", "Swagger", "RobotFramework", "NGINX"],
+	  repositorio: "https://github.com/Camilay3/RatingUp",
+      src: "Ratingup.png"
+    },
     {
       nome: "Calculadora de notas",
       descricao: "Pensado nos alunos que utilizam o sistema de notas do IFCE, a calculadora foi criada para facilitar as simulações sobre a vida acadêmica.",
