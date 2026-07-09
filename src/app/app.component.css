@@ -30,21 +30,21 @@ app-card {
     padding-right: 4px;
     overflow-x: hidden;
     overflow-y: auto;
+
+	/* Scrollbar */
+	&::-webkit-scrollbar { width: 4px; }
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--lightPurple);
+		border-radius: 0.5rem;
+	}
+	/* Firefox */
+    scrollbar-width: 4px;
+    scrollbar-color: var(--lightPurple) transparent;
 }
 
 router-outlet {
     /* Para utilizar o display grid no container sem interferência */
-    display: none; 
-}
-
-/* Scrollbar */
-.container::-webkit-scrollbar {
-    width: 4px;
-}
-
-.container::-webkit-scrollbar-thumb {
-    background-color: var(--lightPurple);
-    border-radius: 0.5rem;
+    display: none;
 }
 
 @media screen and (max-width: 900px) {

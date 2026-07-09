@@ -19,40 +19,38 @@ form {
 .inputGroup {
     display: flex;
     flex-direction: column;
-}
 
-.inputGroup input,
-.inputGroup textarea {
-    padding: 0.8rem;
-    color: var(--darkPurple);
-    border-radius: 0.2rem;
-    border: 3px solid transparent;
-}
+	input, textarea {
+		padding: 0.8rem;
+		color: var(--darkPurple);
+		border-radius: 0.2rem;
+		border: 3px solid transparent;
 
-.inputGroup input:focus,
-.inputGroup textarea:focus {
-    border: 3px solid var(--lightPurple);
-    outline: 0;
-}
+		&:focus {
+			border: 3px solid var(--lightPurple);
+    		outline: 0;
+		}
+	}
 
-.inputGroup textarea {
-    resize: none;
-    overflow-y: auto;
-}
+	textarea {
+		resize: none;
+		overflow-y: auto;
 
-/* SCROLLBAR */
-.inputGroup textarea::-webkit-scrollbar {
-    width: 4px;
-}
+		&::-webkit-scrollbar { width: 4px; }
+		&::-webkit-scrollbar-thumb {
+			background-color: var(--darkPurple);
+			border-radius: 10px;
+		}
 
-.inputGroup textarea::-webkit-scrollbar-thumb {
-    background-color: var(--darkPurple);
-    border-radius: 10px;
-}
+		/* Firefox */
+		scrollbar-width: 4px;
+		scrollbar-color: var(--darkPurple) transparent;
+	}
 
-.inputGroup label {
-    font-weight: bold;
-    margin-bottom: 0.2rem;
+	label {
+		font-weight: bold;
+		margin-bottom: 0.2rem;
+	}
 }
 
 .buttons {
@@ -60,46 +58,38 @@ form {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-}
 
-.buttons button {
-    background-color: var(--lightPurple);
-    border: 3px solid transparent;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
+	button {
+		background-color: var(--lightPurple);
+		border: 3px solid transparent;
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+		cursor: pointer;
 
-.buttons button:nth-child(1) {
-    background-color: transparent;
-    border: 3px solid var(--lightPurple);
-}
+		&:nth-child(1) {
+			background-color: transparent;
+			border: 3px solid var(--lightPurple);
+		}
 
-.buttons button:hover {
-    background-color: transparent;
-    border: 3px solid var(--white);
+		&:hover {
+			background-color: transparent;
+			border: 3px solid var(--white);
+		}
+	}
 }
 
 @media screen and (max-width: 500px) {
-    :host {
-        padding: 1.5rem 2rem;
-    }
+    :host { padding: 1.5rem 2rem; }
+    h1 { font-size: 1rem; }
+    label { font-size: 0.8rem; }
 
-    h1 {
-        font-size: 1rem;
-    }
-
-    label {
-        font-size: 0.8rem;
-    }
-    
     .inputGroup input,
     .inputGroup textarea {
         font-size: 0.6rem;
         padding: 0.4rem;
         border-radius: 0.1rem;
     }
-    
+
     .buttons button {
         font-size: 0.6rem;
         padding: 0.25rem;
