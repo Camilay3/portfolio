@@ -60,6 +60,14 @@ export class AtividadesComponent implements OnInit {
       src: 'TechTalks1.jpeg',
 	  url: 'https://www.linkedin.com/posts/camila-santiago-7a9b9b354_techtalks-microfrontends-frontend-ugcPost-7454857696538898432-jPL8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFhz67EBx_AhbSsZa8Mi8zsmWh7tsg3uPJA',
     },
+	{
+      nome: "Hacktudo 10° Edição",
+      descricao: "Hackathon nacional com o tema “Como construir uma relação mais consciente entre tecnologia e educação em um mundo cada vez mais conectado e cheio de distrações”. Em equipe, desenvolvemos o aplicativo SABIAA e conquistamos o 1º lugar. O evento contou com duas fases: a primeira, com 227 equipes, e a final, com os 10 projetos selecionados.",
+      data: "Setembro de 2026",
+      modalidade: "Online",
+      src: 'hacktudo.png',
+	  url: 'https://lnkd.in/p/d7wBfGra',
+    },
   ];
 
   ngOnInit() {
