@@ -72,6 +72,7 @@ export class ExperienciasComponent implements OnInit {
 	];
 
 	cursos: Curso[] = [
+		{ nome: "Angular: implemente testes de unidade com Jest", orgao: "Alura", dataDeConclusao: "Jan/2026" },
 		{ nome: "Formação Java", orgao: "Alura", dataDeConclusao: "Dez/2025" },
 		{ nome: "Formação Angular", orgao: "Alura", dataDeConclusao: "Jul/2025" },
 		{ nome: "Imersão Flutter", orgao: "Alura", dataDeConclusao: "Abr/2025" },
