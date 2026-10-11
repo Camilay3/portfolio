@@ -21,9 +21,9 @@ export class InicioComponent {
   ];
 
   iconesOutros: Icone[] = [
+    { src: 'fab fa-react', label: 'React' },
     { src: 'fab fa-python', label: 'Python' },
     { src: 'fas fa-database', label: 'PostgreSQL' },
-    { src: 'fas fa-database', label: 'MySQL' },
     { src: 'fi fi-sr-square-c', label: 'C' },
     { src: 'fab fa-swift', label: 'Swift' },
     { src: 'fab fa-php', label: 'php' },

@@ -98,6 +98,11 @@ a {
     flex-wrap: wrap;
 }
 
+.line {
+	display: flex;
+	flex-direction: column;
+}
+
 .bloco {
     display: flex;
     align-items: center;

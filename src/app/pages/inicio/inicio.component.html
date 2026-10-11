@@ -1,19 +1,21 @@
 <h1>Boas vindas ao meu portfólio!</h1>
 <p>Aqui você pode conhecer um pouco mais sobre quem eu sou e como atuo no mundo da tecnologia.</p>
 
-<div class="techstack">
+<div class="line">
     <div class="bloco">
         <h3>Principais tecnologias</h3>
         <app-icones [lista]="iconesPrincipal"></app-icones>
     </div>
-    <div class="bloco">
-        <h3>Exploradas em estudos</h3>
-        <app-icones [lista]="iconesOutros"></app-icones>
-    </div>
-    <div class="bloco">
-        <h3>Ferramentas e softwares</h3>
-        <app-icones [lista]="iconesFerramentas"></app-icones>
-    </div>
+	<div class="techstack">
+		<div class="bloco">
+			<h3>Exploradas em estudos</h3>
+			<app-icones [lista]="iconesOutros"></app-icones>
+		</div>
+		<div class="bloco">
+			<h3>Ferramentas e softwares</h3>
+			<app-icones [lista]="iconesFerramentas"></app-icones>
+		</div>
+	</div>
 </div>
 
 <a routerLink="experiencias">
