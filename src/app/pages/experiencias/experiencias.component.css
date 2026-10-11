@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    min-width: 0;
 }
 
 .legend {
@@ -108,10 +110,9 @@
 .cursos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 0.8rem;
     margin-top: 1.2rem;
+    width: 100%;
 }
 
 .cursos h3, .experiencias h3:nth-child(1) {
@@ -119,6 +120,8 @@
 }
 
 .curso {
+    flex: 1 1 clamp(180px, calc(25% - 0.8rem), 600px);
+    min-width: 0;
     border: 1px solid var(--white);
     border-radius: 1rem;
     padding: 1rem;
@@ -161,4 +164,5 @@
 			gap: 0.125rem !important;
 		}
 	}
+
 }
