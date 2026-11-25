@@ -34,7 +34,7 @@ export class ExperienciasComponent implements OnInit {
 		{
 			cargo: "Desenvolvedora Frontend Júnior",
 			empresa: "Laboratório de Visão Computacional e Inteligência Artificial (VICIA)",
-			data: "08/25 até o momento",
+			data: "08/25 a 11/26",
 			descricao: "Desenvolvimento de projeto em parceria com o Ministério da Educação (MEC), incluindo a criação de telas, ajustes de componentes e integração com a camada de backend (APIs) para garantir o funcionamento completo da aplicação.",
 		},
 		{
